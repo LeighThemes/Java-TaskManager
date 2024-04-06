@@ -4,7 +4,7 @@ This project is a practical task manager implemented with Java Spring Boot, Spri
 It allows users to create tasks with descriptions and due dates, offering convenient filtering and search capabilities based on descriptions, due dates, and completion status. 
 Additionally, users can delete tasks, with data persistence ensured through MySQL server storage.
 
-A demo SQLfile is also included with this project named: TaskManagerDataBase.sql
+A demo SQLfile is also included with this project named: TaskManagerData.sql
 
 ## Table of Contents
 
