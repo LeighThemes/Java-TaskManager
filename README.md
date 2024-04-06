@@ -24,7 +24,8 @@ Step 1: Download project from Github
     - Make sure to change the MySQL User Name and Password to the ones matching your local MySQL Server.
         - Find the application.properties file and make the necessary changes:
         - ![Screenshot 1](./Image-assets/Mysql-settings.png)
-    - Find and right click on the "WebBasedTaskManager4Application.java" file and Run As > Spring Boot App.
+    - To Run application: Enter "<b>mvn spring-boot:run</B>" into the terminal within the project location (/web-based-task-manager-4.1) / (Git Bash recommended)
+    - Alternative Option: Find and right click on the "WebBasedTaskManager4Application.java" file and Run As > Spring Boot App.
     - All potential errors should appear on the console.
     - In your browser of choice, enter in the URL: <b>http://localhost:8080/</b>
     - The project should run on your chosen browser now.
