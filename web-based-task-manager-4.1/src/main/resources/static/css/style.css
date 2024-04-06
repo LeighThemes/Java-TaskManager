@@ -1,0 +1,195 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+h2{
+	font-size: 30px;
+	padding-top: 20px;
+}
+#taskForm, #tasksContainer {
+    margin: 15px;
+    width: 80%; 
+    max-width: 850px;
+}
+#tasksContainer div span#blue.done {
+    background-color: green;
+}
+#tasksContainer div span#blue.not-done {
+    background-color: red;
+}
+.btn {
+	float: right;
+}
+.action-button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.desc-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 9.5px;
+}
+.date-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 28.5px 10px 28.5px;
+}
+.mid-buttons {
+    margin-right: 10px;
+    padding: 10px 13.7px 10px 13.7px;
+}
+.refresh-button{
+    margin-right: 10px;
+    padding: 10px 25px 10px 25px;
+    background-color: #7a899a !important;
+}
+.refresh-button:hover{
+    background-color: #575868 !important;
+    transition: background-color 0.3s ease-in-out !important;
+}
+span {
+	display: flex;
+	margin: 4px;
+}
+#search-desc{
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    display: grid;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#search-desc input{
+    padding: 7px;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#search-desc button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#search-desc button:hover{
+	background-color: #0056b3;
+	transition: background-color 0.3s ease-in-out;
+}
+#taskForm input[type=text],
+#taskForm input[type=date] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#taskForm button,
+.task-item button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#taskForm button:hover,
+.task-item button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease-in-out;
+}
+.task-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: purple;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.saved-tasks{
+	border: 1px solid #ddd; 
+	padding: 10px; 
+	margin-top: 10px; 
+	background-color: #fff; 
+	border-radius: 5px; 
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#tasksContainer {
+	text-align: center;
+}
+#tasksContainer div {
+	text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#tasksContainer span {
+    color: #0038dd;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+#tasksContainer p span{
+    font-size: 17px;
+}
+.task-main {
+    margin-top: -27px !important;
+    margin-left: -13px !important;
+    margin-right: -13px !important;
+    margin-bottom: 20px !important;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #7a899a;
+    padding: 15px;
+    color: white !important;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#tasksContainer span#blue {
+    color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#tasksContainer button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#tasksContainer button:hover {
+	transition: background-color 0.3s ease-in-out;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+#tasksContainer button:nth-child(2) {
+    background-color: red;
+}
+

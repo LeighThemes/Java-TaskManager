@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Task List</title>
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+	<body>
+	
+		<!-- Inline form to add a new task to the page-->
+		<h2>Task Manager</h2>
+		<form id="taskForm">
+		    <input type="text" id="name" name="name" placeholder="Enter task name" required />
+		    <input type="text" id="description" name="description" placeholder="Enter task description" required />
+		    <input type="date" id="dueDate" name="dueDate" required />
+		    <button type="submit" class="btn">Add New Task</button>
+		</form>
+		
+		<!-- Search input and button -->
+		<div id="search-desc">
+			<div>
+				<!-- allows you to search by description -->
+				<input type="text" id="searchDescription" placeholder="Enter Description">
+				<button class="desc-button" onclick="hideTasksByDescription()">Search Description</button>
+			</div>
+			<div>
+				<!-- allows you to search by date -->
+			<input type="text" id="searchDate" placeholder="YYYY-MM-DD">
+			<button class="date-button" onclick="hideTasksByDate()">Search Date</button>
+			</div>
+			<div>
+				<!-- buttons allow you to search by status -->
+				
+				<button class="mid-buttons" onclick="hideTasksByStatus('mark as not done')">Show Done</button>
+			    <button class="mid-buttons" onclick="hideTasksByStatus('mark as done')">Show Not Done</button>
+			    <!-- Refresh page button -->
+			    <button class="refresh-button" onclick="refreshPage()">Refresh Page</button>
+		    </div>
+		</div>
+		
+		<!-- Container for displaying tasks -->
+		<div id="tasksContainer">
+		    <div th:each="task: ${tasks}" th:id="'task-' + ${task.id}" data-complete="${task.isComplete}">
+		        <p><span class="task-main" th:text="'Task: ' + ${task.name}">Task name</span></p>
+		        <p><span th:text="'Description: ' +${task.description}">Task description</span></p>
+		        <p><span th:text="'Due Date: ' +${#dates.format(task.dueDate, 'yyyy-MM-dd')}">Due date</span></p>
+		        <button th:attr="onclick='toggleTaskComplete(\'' + ${task.id} + '\', this)'"
+		                th:id="'taskButton-' + ${task.id}"
+		                th:style="'background-color: ' + (${task.isComplete} ? 'red' : 'green')">
+		            [[${task.isComplete ? 'Mark as Not Done' : 'Mark as Done'}]]
+		        </button>
+		        <button th:onclick="'deleteTask(' + ${task.id} + ', this);'" class="action-button">Delete Task</button>
+		    </div>
+		</div>
+		
+		<!-- JavaScript Imports -->
+		<script src="/js/script.js"></script> 
+	
+	</body>
+</html>
