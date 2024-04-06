@@ -27,8 +27,6 @@ Step 1: Download project from Github
     - Find and right click on the "WebBasedTaskManager4Application.java" file and Run As > Spring Boot App.
     - All potential errors should appear on the console.
     - In your browser of choice, enter in the URL: <b>http://localhost:8080/</b>
-        - To find exactly where the project is running from look for the following line in the console, the dates will be different but it should contain the proper port:
-        - 2023-11-12T22:28:50.220-05:00 INFO 14140 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
     - The project should run on your chosen browser now.
 
 ## Usage
