@@ -6,7 +6,7 @@ Additionally, users can delete tasks, with data persistence ensured through MySQ
 
 A demo SQLfile is also included with this project named: TaskManagerData.sql
 
-- ![Screenshot 2](./Image-assets/Taskmanagerscreen.png)
+![Screenshot 2](./Image-assets/Taskmanagerscreen.png)
 
 ## Table of Contents
 
