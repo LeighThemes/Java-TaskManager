@@ -38,5 +38,5 @@ Step 1: Download project from Github
     - Users will be able to create tasks with descriptions and due dates.
     - Users will also be able to search for specific tasks using the filter options. The can look for tasks based on descriptions, due dates and status.
 - Users will be able to mark a task as Done or Not Done by clicking on the button. Users will also be able to delete the tasks at any point.
-- ![Screenshot 3](./Image-assets/Tasks.png)
+![Screenshot 3](./Image-assets/Tasks.png)
 
