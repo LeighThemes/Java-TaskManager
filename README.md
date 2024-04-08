@@ -12,7 +12,6 @@ A demo SQLfile is also included with this project named: TaskManagerData.sql
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 
 ## Installation
 
